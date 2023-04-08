@@ -1018,6 +1018,8 @@ class AudioSegment(object):
             converted, _ = audioop.ratecv(self._data, self.sample_width,
                                           self.channels, self.frame_rate,
                                           frame_rate, None)
+            print(converted)
+            print(_)
         else:
             converted = self._data
 
